@@ -44,6 +44,7 @@ pip install -r requirements.txt
 - Interactive exploration: `jupyterlab`
 - Testing: `pytest`
 - Code Formatting `black`
+- Linting: `flake8`
 - Install with `pip install` in venv
 
 ### Pin your dependencies
