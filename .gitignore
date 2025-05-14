@@ -8,6 +8,10 @@ __pycache__/
 # Data folders
 data/
 
+# Ignore trained models and other binary artifacts
+pickle_models/
+*.pkl
+
 # Jupyter checkpoints
 .ipynb_checkpoints/
 
