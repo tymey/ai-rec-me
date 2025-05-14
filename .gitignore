@@ -1,0 +1,15 @@
+# Byte-compiled / caches
+__pycache__/
+*.py[cod]
+
+# Virtual envs
+.venv/
+
+# Data folders
+data/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
