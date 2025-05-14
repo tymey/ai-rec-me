@@ -8,6 +8,7 @@ import argparse
 import pickle
 from surprise import accuracy
 
+
 def evaluate(model_file: str, test_file: str):
     # Load
     with open(model_file, "rb") as f:
@@ -16,13 +17,13 @@ def evaluate(model_file: str, test_file: str):
         testset = pickle.load(f)
     # Evaluate
     preds = algo.test(testset)
-    rmse = accuracy.rmse(preds, verbose=True)
-    mae  = accuracy.mae(preds, verbose=True)
+    accuracy.rmse(preds, verbose=True)  # rmse
+    accuracy.mae(preds, verbose=True)  # mae
+
 
 if __name__ == "__main__":
     p = argparse.ArgumentParser()
     p.add_argument("--model-file", required=True)
-    p.add_argument("--test-file",  required=True)
+    p.add_argument("--test-file", required=True)
     args = p.parse_args()
     evaluate(args.model_file, args.test_file)
-
