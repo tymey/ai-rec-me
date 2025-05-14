@@ -6,10 +6,10 @@ __pycache__/
 .venv/
 
 # Data folders
-data/
+_data/
 
 # Ignore trained models and other binary artifacts
-pickle_models/
+_models/
 *.pkl
 
 # Jupyter checkpoints
